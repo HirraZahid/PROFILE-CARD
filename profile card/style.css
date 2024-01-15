@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+}
+
+.profile_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+.profile_card::before{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 36%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: blue;
+}
+.image {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
+.image .profile_image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.profile_card .class-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.class-data .name {
+    font-size: 22;
+    font-weight: bold;
+}
+
+.profile_card .media-buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+.media-buttons .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 34px;
+    width: 34px;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 50%;
+    margin: 0px 8px;
+    font-size: 18px;
+}
+
+.profile_card .buttons {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.buttons .button {
+    background-color: rgba(13, 13, 202, 0.815);
+    color: white;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    margin: 0 10px;
+    padding: 8px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.buttons .button:hover {
+    background-color: rgb(114, 114, 231);
+}
+
+
+.profile_card .analytics {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.analytics .likes {
+    display: flex;
+    align-items: center;
+    color: #333;
+    border-right: 2px solid #e7e7e7;
+    padding: 0px 20px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.likes i {
+    font-size: 18px;
+    margin: 6px;
+    font-weight: bold;
+}
+
+.likes:last-child {
+    border-right: none;
+}
